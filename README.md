@@ -6,8 +6,8 @@ to other accounts, view their transaction history, and change their PIN —
 all through a browser.
 
 This started as a console-based mini project and was rebuilt as a proper
-web application with a real database, hashed credentials, and a clean
-MVC-style code structure.
+web application as a web application with persistent database storage, 
+password/PIN hashing, and a modular Flask structure.
 
 ## Features
 
@@ -31,7 +31,7 @@ MVC-style code structure.
 ## Project Structure
 
 ```
-banking-webapp/
+banking-system/
 ├── app.py              # Flask app factory + all routes
 ├── config.py           # App configuration
 ├── extensions.py       # SQLAlchemy instance
@@ -78,7 +78,7 @@ banking-webapp/
 
 5. Open your browser at **http://127.0.0.1:5000**
 
-A `bank.db` SQLite file is created automatically on first run — no manual
+The SQLite database is created automatically when the application starts — no manual
 database setup needed.
 
 ## How It Works
